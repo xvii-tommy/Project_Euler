@@ -4,3 +4,34 @@
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million,
 # find the sum of the even-valued terms.
 
+class Fibon:
+    def __init__(self, value):
+        self.lst = []
+        self.value = value
+
+    def fibonacci(self):
+        if self.value <= 0:
+            print("invalid number")
+        else:
+            print("Fibonacci Sequence")
+            for i in range(self.value):
+                x = self.fibseq(i + 1)
+                self.lst.append(x)
+                if x > 4000000:
+                    self.sumeven(self.lst)
+                    break
+                else:
+                    pass
+
+    def fibseq(self, target):
+        if target <= 1:
+            return 1
+        else:
+            return(self.fibseq(target-1)+ self.fibseq(target-2))
+
+    def sumeven(self, fibnums):
+        self.lst.pop(len(fibnums)-1)
+        print(fibnums)
+
+f = Fibon(100)
+f.fibonacci()
