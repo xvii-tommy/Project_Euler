@@ -31,7 +31,11 @@ class Fibon:
 
     def sumeven(self, fibnums):
         self.lst.pop(len(fibnums)-1)
-        print(fibnums)
+        x = 0
+        for i in self.lst:
+            if i % 2 == 0:
+                x = x + i
+        print(x)
 
 f = Fibon(100)
 f.fibonacci()
