@@ -1,6 +1,6 @@
 # Project_Euler
 
-This repo contains problems from Project Euler's website solved with python. Solutions here may not be optimal 
+This repo contains problems from Project Euler's website solved with python. Solutions here <strike>may not</strike> definitely wont be optimal.
 
 ## Problem 1
 If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
